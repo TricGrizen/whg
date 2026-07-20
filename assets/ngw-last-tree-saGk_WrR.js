@@ -50,4 +50,4 @@ var e=`ngw-last-tree`,t=`世界尽头的那棵树`,n=`The tree at the bottom of 
 
 布马说，气候变化听起来抽象，但这件事连小学生都能懂：在谷歌地球上给他们指出那个小点——那里长着全世界最南的一棵树。"我们要的，就是找到一个点，一个人们看得见的、标记着边缘的实体点。"然后，我们就可以看着这颗星球，越过它。
 
-（本文摘译自美国《国家地理》2021年6月号封面报道）`,f=[`/whg/geo/ngw-last-tree/1.jpg`,`/whg/geo/ngw-last-tree/2.jpg`,`/whg/geo/ngw-last-tree/3.jpg`,`/whg/geo/ngw-last-tree/4.jpg`,`/whg/geo/ngw-last-tree/5.jpg`],p={id:e,title:t,otitle:n,source:r,year:i,month:5,place:o,lat:s,lng:c,line:l,summary:u,text:d,images:f};export{p as default,e as id,f as images,s as lat,l as line,c as lng,a as month,n as otitle,o as place,r as source,u as summary,d as text,t as title,i as year};
+（本文摘译自美国《国家地理》2021年6月号封面报道）`,f=[`/whg/geo/ngw-last-tree/1.jpg`,`/whg/geo/ngw-last-tree/2.jpg`,`/whg/geo/ngw-last-tree/3.jpg`,`/whg/geo/ngw-last-tree/4.jpg`,`/whg/geo/ngw-last-tree/5.jpg`],p=[0,5,8,15,24],m={id:e,title:t,otitle:n,source:r,year:i,month:5,place:o,lat:s,lng:c,line:l,summary:u,text:d,images:f,imgat:p};export{m as default,e as id,f as images,p as imgat,s as lat,l as line,c as lng,a as month,n as otitle,o as place,r as source,u as summary,d as text,t as title,i as year};

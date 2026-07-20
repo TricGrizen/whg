@@ -26,4 +26,4 @@ var e=`ngw-odyssey`,t=`奥德修斯是英雄吗？古典学者说，多数人都
 
 那么《奥德赛》到底想说什么？在克里斯滕森看来，这是一个关于创伤、幸存，以及在与家人朋友的关系中重新发现自我的故事。奥德修斯与其说是圣人，不如说是个反英雄——一个沃尔特·怀特（《绝命毒师》），一个托尼·索普拉诺（《黑道家族》），或者一个蝙蝠侠式的人物。"奥德修斯、阿喀琉斯，以及英雄时代的每一个人，既是我们该效仿的，也是我们该引以为戒的。"
 
-（本文摘译自美国《国家地理》2026年7月17日报道）`,f=[`/whg/geo/ngw-odyssey/1.jpg`,`/whg/geo/ngw-odyssey/2.jpg`],p={id:e,title:t,otitle:n,source:r,year:i,month:7,place:o,lat:s,lng:c,line:l,summary:u,text:d,images:f};export{p as default,e as id,f as images,s as lat,l as line,c as lng,a as month,n as otitle,o as place,r as source,u as summary,d as text,t as title,i as year};
+（本文摘译自美国《国家地理》2026年7月17日报道）`,f=[`/whg/geo/ngw-odyssey/1.jpg`,`/whg/geo/ngw-odyssey/2.jpg`],p=[0,7],m={id:e,title:t,otitle:n,source:r,year:i,month:7,place:o,lat:s,lng:c,line:l,summary:u,text:d,images:f,imgat:p};export{m as default,e as id,f as images,p as imgat,s as lat,l as line,c as lng,a as month,n as otitle,o as place,r as source,u as summary,d as text,t as title,i as year};
