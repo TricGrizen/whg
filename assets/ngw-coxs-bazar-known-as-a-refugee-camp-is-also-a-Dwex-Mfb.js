@@ -1,0 +1,9 @@
+var e=`ngw-coxs-bazar-known-as-a-refugee-camp-is-also-a`,t=`科克斯巴扎尔以难民营闻名——但它也是热门的度假海滩`,n=`Cox’s Bazar is known as a refugee camp—but it’s also a popular vacation site`,r=`natgeo`,i=2022,a=9,o=`科克斯巴扎尔·孟加拉国`,s=21.43,c=91.97,l=`全球最大难民营旁，藏着世界最长的天然海滩`,u=`在孟加拉国以外，科克斯巴扎尔的名字总与“全球最大难民营”连在一起，近百万逃离缅甸的罗兴亚人栖身于此。但对许多孟加拉人来说，这里是最心爱的度假地——沿孟加拉湾绵延约60英里的天然沙滩，是世界上最长的海滩之一。一道山岭和检查站，把难民营与海滩隔成“两个世界”。摄影师伊斯梅尔·费尔多斯对两边都不陌生：儿时坐火车来这儿看海，长大后又用镜头记录罗兴亚危机。2020年冬天一个酷热的午后，他走上18英里外那片人山人海的海滩，拍下按次出租的马匹，拍下正午刺眼阳光下衣着朴素的泳客，也拍下这座城市另一张少有人见的面孔。`,d=`在孟加拉国以外的人眼里，科克斯巴扎尔是全世界最大的难民营，近百万流亡的罗兴亚人栖身于此——他们逃离了邻国缅甸，而美国已把那里发生的事定性为种族灭绝。可在许多孟加拉人心里，科克斯巴扎尔是最心爱的旅游胜地之一，也是世界上最长的天然沙滩之一，沿孟加拉湾绵延约60英里（近百公里）海岸线。
+
+这两个天差地别的科克斯巴扎尔，被一道山岭和一连串检查站隔开，把海滩和难民营分置在“两个不同的世界”，伊斯梅尔·费尔多斯说。两边他都熟。费尔多斯最早的记忆之一，就是坐着火车去科克斯巴扎尔，一家人到海边度假。而近些年，作为一名摄影师，他记录下了罗兴亚人的危机。
+
+2020年初的一个冬日，费尔多斯从难民营的工作里抽身，去18英里外的海滩上走一走。气温超过华氏100度（约38摄氏度），海岸上挤满了人。或躺或逛在沙滩上的，有制衣厂工人、电信公司高管、街头小贩，还有伊斯兰经学院的学生。有些人坐了10到15个小时的夜班长途车，只为在海水里泡上一个下午。
+
+费尔多斯在首都达卡长大，却在国外生活了十年。当他重新回到科克斯巴扎尔的海岸，竟意外地被一阵文化冲击击中——眼前的景象和欧美的海滩太不一样了。他索性拥抱了这种视角，把镜头对准按次出租的马匹，对准正午刺眼骄阳下衣着朴素的泳客。以大海作背景，这片拥挤的海滩看上去竟宁静得有些不真实，甚至像空无一人。
+
+他后来又回去了两次。最后一次是在二月，费尔多斯带上父母、姐妹、兄弟和两个外甥女一起来度假。距离全家上一次一起来这里，已经过去二十多年了。“我妈现在还写信跟我念叨这件事，说‘谢谢你安排了这一趟’，”他说。`,f=[`/whg/geo/ngw-coxs-bazar-known-as-a-refugee-camp-is-also-a/1.jpg`,`/whg/geo/ngw-coxs-bazar-known-as-a-refugee-camp-is-also-a/2.jpg`,`/whg/geo/ngw-coxs-bazar-known-as-a-refugee-camp-is-also-a/3.jpg`,`/whg/geo/ngw-coxs-bazar-known-as-a-refugee-camp-is-also-a/4.jpg`,`/whg/geo/ngw-coxs-bazar-known-as-a-refugee-camp-is-also-a/5.jpg`],p=[0,3,3,5,5],m={id:e,title:t,otitle:n,source:r,year:i,month:9,place:o,lat:s,lng:c,line:l,summary:u,text:d,images:f,imgat:p};export{m as default,e as id,f as images,p as imgat,s as lat,l as line,c as lng,a as month,n as otitle,o as place,r as source,u as summary,d as text,t as title,i as year};
