@@ -12,10 +12,41 @@
     <link rel="apple-touch-icon" href="/whg/apple-touch-icon.png" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect x=%226%22 y=%226%22 width=%2288%22 height=%2288%22 rx=%2214%22 fill=%22%23A63B2A%22 transform=%22rotate(-2 50 50)%22/><text x=%2250%22 y=%2270%22 font-size=%2254%22 text-anchor=%22middle%22 fill=%22%23F6F4ED%22 font-family=%22serif%22>文</text></svg>" />
     <title>文化宫</title>
-    <script type="module" crossorigin src="/whg/assets/index-Dg_FHawf.js"></script>
-    <link rel="stylesheet" crossorigin href="/whg/assets/index-VlmG8Ph6.css">
+    <script type="module" crossorigin src="/whg/assets/index-DfhHXp8I.js"></script>
+    <link rel="stylesheet" crossorigin href="/whg/assets/index-DVBQ_B3V.css">
   </head>
   <body>
     <div id="root"></div>
+    <!-- 启动黑匣子＋自救层：纯手写 ES5，不依赖任何构建产物——构建产物挂掉时它就是救生艇。
+         记流水到 whg.boot.cur（上一次挪到 whg.boot.prev），6 秒没起来就画自救卡。 -->
+    <script>
+;(function(){
+var C='whg.boot.cur',g=[],p=null,L=null
+try{L=localStorage;p=L.getItem(C)}catch(e){}
+function S(k,v){try{L.setItem(k,v)}catch(e){}}
+function M(s){g.push([s,Math.round(performance.now())]);S(C,JSON.stringify(g))}
+if(p)S('whg.boot.prev',p)
+window.__bootMark=M
+M('html')
+setTimeout(function(){
+if(window.__appReady)return
+M('watchdog')
+var b='display:block;width:100%;max-width:260px;margin:8px auto;padding:13px;font-size:17px;background:#fff;border:1px solid #CEC7B8;border-radius:10px'
+var d=document.createElement('div')
+d.style.cssText='position:fixed;inset:0;z-index:9999;padding:20vh 24px;background:#F6F4ED;color:#2B2621;font:16px/1.7 system-ui;text-align:center'
+d.innerHTML='<div style=font-size:20px;margin-bottom:16px>打开卡住了</div><button style="'+b+'">重新加载</button><button style="'+b+'">彻底修复后重开</button><div style=font-size:12px;opacity:.5;margin-top:16px>'+g.join(' · ')+'</div>'
+document.body.appendChild(d)
+function R(){location.reload()}
+var B=d.getElementsByTagName('button')
+B[0].onclick=R
+B[1].onclick=function(){
+var j=[]
+try{j.push(navigator.serviceWorker.getRegistrations().then(function(rs){return Promise.all(rs.map(function(r){return r.unregister()}))}))}catch(e){}
+try{j.push(caches.keys().then(function(ks){return Promise.all(ks.map(function(k){return caches.delete(k)}))}))}catch(e){}
+try{Promise.all(j).then(R,R)}catch(e){R()}
+}
+},6000)
+})()
+</script>
   </body>
 </html>
