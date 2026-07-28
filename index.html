@@ -12,39 +12,72 @@
     <link rel="apple-touch-icon" href="/whg/apple-touch-icon.png" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect x=%226%22 y=%226%22 width=%2288%22 height=%2288%22 rx=%2214%22 fill=%22%23A63B2A%22 transform=%22rotate(-2 50 50)%22/><text x=%2250%22 y=%2270%22 font-size=%2254%22 text-anchor=%22middle%22 fill=%22%23F6F4ED%22 font-family=%22serif%22>文</text></svg>" />
     <title>文化宫</title>
-    <script type="module" crossorigin src="/whg/assets/index-DgsBOgyA.js"></script>
+    <script type="module" crossorigin src="/whg/assets/index-DBsqEvjq.js"></script>
     <link rel="stylesheet" crossorigin href="/whg/assets/index-DVBQ_B3V.css">
   </head>
   <body>
     <div id="root"></div>
     <!-- 启动黑匣子＋自救层：纯手写 ES5，不依赖任何构建产物——构建产物挂掉时它就是救生艇。
-         记流水到 whg.boot.cur（上一次挪到 whg.boot.prev），6 秒没起来就画自救卡。 -->
+         记流水到 whg.boot.cur（上一次挪到 whg.boot.prev，并压进 whg.boot.hist 留最近 8 次），
+         资源加载失败/未捕获报错/未处理的 rejection 一并记进流水（下次白屏能查出死因）。
+         6 秒还没起来：先自己动手（注销 SW＋只删应用壳那格缓存 whg-static，风景图那格绝不碰）再重开；
+         若 10 分钟内已经自救过一次还是不行，才画自救卡请人。手术刀永远不碰家人攒下的风景图。 -->
     <script>
 ;(function(){
-var C='whg.boot.cur',g=[],p=null,L=null
+var C='whg.boot.cur',P='whg.boot.prev',H='whg.boot.hist',F='whg.boot.fix'
+var g=[],p=null,L=null
 try{L=localStorage;p=L.getItem(C)}catch(e){}
 function S(k,v){try{L.setItem(k,v)}catch(e){}}
-function M(s){g.push([s,Math.round(performance.now())]);S(C,JSON.stringify(g))}
-if(p)S('whg.boot.prev',p)
+function G(k){try{return L.getItem(k)}catch(e){return null}}
+function M(s){if(g.length<40){g.push([s,Math.round(performance.now())]);S(C,JSON.stringify(g))}}
+if(p){
+S(P,p)
+var h=[]
+try{h=JSON.parse(G(H)||'[]')}catch(e){}
+if(!(h instanceof Array))h=[]
+try{h.push({at:Date.now(),m:JSON.parse(p)})}catch(e){}
+if(h.length>8)h=h.slice(h.length-8)
+S(H,JSON.stringify(h))
+}
 window.__bootMark=M
 M('html')
+function N(u){u=String(u||'');var i=u.indexOf('?');if(i>=0)u=u.slice(0,i);var s=u.split('/');return s[s.length-1]||u}
+window.addEventListener('error',function(e){
+var t=e&&e.target
+if(t&&t!==window&&(t.src||t.href))M('res:'+N(t.src||t.href))
+else M('err:'+String((e&&e.message)||'').slice(0,80))
+},true)
+window.addEventListener('unhandledrejection',function(e){M('rej:'+String((e&&e.reason)||'').slice(0,80))})
+function R(){location.reload()}
+// 手术刀：注销 SW＋只删 whg-static（应用壳那格）。风景图存在 whg-geo-v1，一根汗毛不动。
+function FIX(){
+var j=[]
+try{j.push(navigator.serviceWorker.getRegistrations().then(function(rs){return Promise.all(rs.map(function(r){return r.unregister()}))}))}catch(e){}
+try{j.push(caches.delete('whg-static'))}catch(e){}
+try{Promise.all(j).then(R,R)}catch(e){R()}
+}
 setTimeout(function(){
 if(window.__appReady)return
 M('watchdog')
+var now=Date.now(),last=0
+try{last=parseInt(G(F)||'0',10)||0}catch(e){}
+if(!(now-last<600000)){
+// 十分钟内没自救过：老人全程零操作，自己动手修好再开。
+// 时间戳写在动手之前——自救中途崩掉也不会变成无限重开。
+M('autofix')
+S(F,String(now))
+FIX()
+return
+}
+// 自救过还是不行，才请人
 var b='display:block;width:100%;max-width:260px;margin:8px auto;padding:13px;font-size:17px;background:#fff;border:1px solid #CEC7B8;border-radius:10px'
 var d=document.createElement('div')
 d.style.cssText='position:fixed;inset:0;z-index:9999;padding:20vh 24px;background:#F6F4ED;color:#2B2621;font:16px/1.7 system-ui;text-align:center'
-d.innerHTML='<div style=font-size:20px;margin-bottom:16px>打开卡住了</div><button style="'+b+'">重新加载</button><button style="'+b+'">彻底修复后重开</button><div style=font-size:12px;opacity:.5;margin-top:16px>'+g.join(' · ')+'</div>'
+d.innerHTML='<div style=font-size:20px;margin-bottom:16px>打开卡住了</div><button style="'+b+'">重新加载</button><button style="'+b+'">修复后重开</button><div style=font-size:12px;opacity:.6;margin-top:14px>修复不会动已存到本机的风景图和家里的数据</div><div style=font-size:12px;opacity:.5;margin-top:10px>'+g.join(' · ')+'</div>'
 document.body.appendChild(d)
-function R(){location.reload()}
 var B=d.getElementsByTagName('button')
 B[0].onclick=R
-B[1].onclick=function(){
-var j=[]
-try{j.push(navigator.serviceWorker.getRegistrations().then(function(rs){return Promise.all(rs.map(function(r){return r.unregister()}))}))}catch(e){}
-try{j.push(caches.keys().then(function(ks){return Promise.all(ks.map(function(k){return caches.delete(k)}))}))}catch(e){}
-try{Promise.all(j).then(R,R)}catch(e){R()}
-}
+B[1].onclick=FIX
 },6000)
 })()
 </script>
