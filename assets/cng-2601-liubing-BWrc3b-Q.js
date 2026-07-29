@@ -54,4 +54,4 @@ var e=`cng-2601-liubing`,t=`黑龙江流冰：北国江河最壮美的冬日“�
 
 那么，黑龙江的流冰之美究竟在哪里？对我而言，它的美不仅来自自然赠予的“季节限定”的视觉盛宴，更来自那种属于东北大地的力量感。出生于哈尔滨的演员薛佳凝曾回忆童年的跑冰排景象：形态各异的冰块浩荡而下，震耳欲聋。她说自己看似柔弱，爆发力却极强，那是从小生活在凛冽的冬天里，身体里自然积累出的力量。
 
-黑龙江的流冰，就是这种力量本身。`,d=[`/whg-geo3/cng-2601-liubing/1.jpeg`,`/whg-geo3/cng-2601-liubing/2.jpeg`,`/whg-geo3/cng-2601-liubing/3.jpeg`,`/whg-geo3/cng-2601-liubing/4.jpeg`],f=[0,9,9,29],p={id:e,title:t,place:n,lat:r,lng:i,source:`cng`,year:o,month:1,line:c,summary:l,text:u,images:d,imgat:f};export{p as default,e as id,d as images,f as imgat,r as lat,c as line,i as lng,s as month,n as place,a as source,l as summary,u as text,t as title,o as year};
+黑龙江的流冰，就是这种力量本身。`,d=[`/whg-geo3/cng-2601-liubing/1.jpeg?v=2`,`/whg-geo3/cng-2601-liubing/2.jpeg?v=2`,`/whg-geo3/cng-2601-liubing/3.jpeg?v=2`,`/whg-geo3/cng-2601-liubing/4.jpeg?v=2`],f=[0,9,9,29],p={id:e,title:t,place:n,lat:r,lng:i,source:`cng`,year:o,month:1,line:c,summary:l,text:u,images:d,imgat:f};export{p as default,e as id,d as images,f as imgat,r as lat,c as line,i as lng,s as month,n as place,a as source,l as summary,u as text,t as title,o as year};

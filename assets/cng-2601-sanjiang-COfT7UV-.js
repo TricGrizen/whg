@@ -136,4 +136,4 @@ var e=`cng-2601-sanjiang`,t=`三江平原：曾是中国最大的沼泽地`,n=`�
 
 说到这里，我觉得似乎回答了聂绀弩的“天问”。开垦三江平原，游牧的蒙古人做不到，狩猎采集的鄂伦春人做不到，打鱼的赫哲人做不到，耕作的农民也做不到……部落酋长做不到，秦皇汉武也做不到……因为他们虽然能动员起庞大的人口，但是他们没有拖拉机、挖掘机……总之，只有到了20世纪中叶，各种因素才聚集起来，一个大垦荒的时代才真正来临。
 
-这算是回答了聂绀弩之问吗？`,d=[`/whg-geo3/cng-2601-sanjiang/1.jpeg`,`/whg-geo3/cng-2601-sanjiang/2.jpeg`,`/whg-geo3/cng-2601-sanjiang/3.jpeg`,`/whg-geo3/cng-2601-sanjiang/4.jpeg`],f=[3,20,27,47],p={id:e,title:t,place:n,lat:r,lng:i,source:`cng`,year:o,month:1,line:c,summary:l,text:u,images:d,imgat:f};export{p as default,e as id,d as images,f as imgat,r as lat,c as line,i as lng,s as month,n as place,a as source,l as summary,u as text,t as title,o as year};
+这算是回答了聂绀弩之问吗？`,d=[`/whg-geo3/cng-2601-sanjiang/1.jpeg?v=2`,`/whg-geo3/cng-2601-sanjiang/2.jpeg?v=2`,`/whg-geo3/cng-2601-sanjiang/3.jpeg?v=2`,`/whg-geo3/cng-2601-sanjiang/4.jpeg?v=2`],f=[3,20,27,47],p={id:e,title:t,place:n,lat:r,lng:i,source:`cng`,year:o,month:1,line:c,summary:l,text:u,images:d,imgat:f};export{p as default,e as id,d as images,f as imgat,r as lat,c as line,i as lng,s as month,n as place,a as source,l as summary,u as text,t as title,o as year};

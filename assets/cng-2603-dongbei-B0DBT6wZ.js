@@ -132,4 +132,4 @@ var e=`cng-2603-dongbei`,t=`我发现：东北是中国自然省最密集的地�
 
 最后再向南，我们进入半干旱的西辽河草原自然省。这里是游牧民族的天下，而我们也将回到出发后进入的第一个自然省——内蒙古中部草原，也就是当年张承志下乡的地方……这里就在北京以北，其实更常见的是沙地与疏林草原……据说，这是人类最喜欢的景观。
 
-其实，这场旅行还有一个更大的诱惑我没有说：我们本可以抵达中国版图四至中的两至——最北端和最东端，但还是留待下次吧。因为文章至此应该结束了。`,d=[`/whg-geo3/cng-2603-dongbei/1.jpg`,`/whg-geo3/cng-2603-dongbei/2.jpg`,`/whg-geo3/cng-2603-dongbei/3.jpg`],f=[28,49,52],p={id:e,title:t,place:n,lat:r,lng:i,source:`cng`,year:o,month:3,line:c,summary:l,text:u,images:d,imgat:f};export{p as default,e as id,d as images,f as imgat,r as lat,c as line,i as lng,s as month,n as place,a as source,l as summary,u as text,t as title,o as year};
+其实，这场旅行还有一个更大的诱惑我没有说：我们本可以抵达中国版图四至中的两至——最北端和最东端，但还是留待下次吧。因为文章至此应该结束了。`,d=[`/whg-geo3/cng-2603-dongbei/1.jpg?v=2`,`/whg-geo3/cng-2603-dongbei/2.jpg?v=2`,`/whg-geo3/cng-2603-dongbei/3.jpg?v=2`],f=[28,49,52],p={id:e,title:t,place:n,lat:r,lng:i,source:`cng`,year:o,month:3,line:c,summary:l,text:u,images:d,imgat:f};export{p as default,e as id,d as images,f as imgat,r as lat,c as line,i as lng,s as month,n as place,a as source,l as summary,u as text,t as title,o as year};
