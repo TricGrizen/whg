@@ -34,4 +34,4 @@ var e=`ngw-veryovkina-cave`,t=`摄影师为活命而攀爬——逃出世界已�
 
 我们花了四天才回到地面。每个人都是独自登顶的。以往结束一次洞穴之行、钻出地面后，我的感官通常会变得格外敏锐：气味更浓，色彩更鲜艳，声音更清晰。而这一次，一切都出奇地黯淡。我觉得自己像个幽灵，过着本应属于我的生活。但我也从未感到过如此的解脱。我记得一轮血红的月亮，正沉向黑海的地平线。
 
-一年后，帕维尔和队员科斯佳·兹韦列夫来到我在奥地利因斯布鲁克的家。他们把两瓶伏特加放进冰柜，让我闭上眼睛。当我睁开眼，厨房餐桌上摆着的，正是我当初丢下的一部分装备。`,f=[`/whg-geo1/ngw-veryovkina-cave/1.jpg`,`/whg-geo1/ngw-veryovkina-cave/2.jpg`],p=[0,3],m={id:e,title:t,otitle:n,source:r,year:i,month:8,place:o,lat:s,lng:c,line:l,summary:u,text:d,images:f,imgat:p};export{m as default,e as id,f as images,p as imgat,s as lat,l as line,c as lng,a as month,n as otitle,o as place,r as source,u as summary,d as text,t as title,i as year};
+一年后，帕维尔和队员科斯佳·兹韦列夫来到我在奥地利因斯布鲁克的家。他们把两瓶伏特加放进冰柜，让我闭上眼睛。当我睁开眼，厨房餐桌上摆着的，正是我当初丢下的一部分装备。`,f=[`/whg-geo1/ngw-veryovkina-cave/1.jpg`,`/whg-geo1/ngw-veryovkina-cave/2.jpg`],p=[0,3],m=[``,`洞穴探险者下降到韦廖夫金纳洞系最底层的一处岩洞。洪水期间，水一直涨到洞顶。`],h={id:e,title:t,otitle:n,source:r,year:i,month:8,place:o,lat:s,lng:c,line:l,summary:u,text:d,images:f,imgat:p,caps:m};export{m as caps,h as default,e as id,f as images,p as imgat,s as lat,l as line,c as lng,a as month,n as otitle,o as place,r as source,u as summary,d as text,t as title,i as year};
